@@ -9,3 +9,6 @@ emp_who_left = pd.read_excel(
 a = emp_who_left.groupby("dept")
 a_mean = a.mean()["satisfaction_level"]
 # print(a_mean)
+
+b = emp_who_left.groupby("dept")
+b_mean = b.mean()["average_montly_hours"]
