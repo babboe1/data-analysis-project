@@ -4,3 +4,8 @@ import pandas as pd
 
 emp_who_left = pd.read_excel(
     r"Hash-Analytic-Python-Analytics-Problem-case-study-1.xlsx", sheet_name="Employees who have left")
+# print(emp_who_left)
+
+a = emp_who_left.groupby("dept")
+a_mean = a.mean()["satisfaction_level"]
+# print(a_mean)
