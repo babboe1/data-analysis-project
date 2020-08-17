@@ -28,6 +28,10 @@ f = pd.merge(c, d_mean, how="inner", on="dept")
 g = pd.merge(e_mean, f, how='inner', on="dept")
 
 
+i = emp_who_left.groupby("dept")
+i_mean = i.mean()["time_spend_company"]
+
+
 
 
 
