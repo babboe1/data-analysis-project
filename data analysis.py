@@ -19,3 +19,6 @@ c = pd.merge(a_mean, b_mean, how="inner", on="dept")
 
 d = emp_who_left.groupby("dept")
 d_mean = d.mean()["number_project"]
+
+e = emp_who_left.groupby("dept")
+e_mean = e.mean()["last_evaluation"]
