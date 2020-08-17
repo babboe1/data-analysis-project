@@ -15,3 +15,7 @@ b_mean = b.mean()["average_montly_hours"]
 
 
 c = pd.merge(a_mean, b_mean, how="inner", on="dept")
+
+
+d = emp_who_left.groupby("dept")
+d_mean = d.mean()["number_project"]
