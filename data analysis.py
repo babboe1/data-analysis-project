@@ -25,5 +25,10 @@ e_mean = e.mean()["last_evaluation"]
 
 
 f = pd.merge(c, d_mean, how="inner", on="dept")
+g = pd.merge(e_mean, f, how='inner', on="dept")
+
+
+
+
 
 
