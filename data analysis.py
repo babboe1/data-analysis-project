@@ -66,6 +66,21 @@ promotion_last_5years_mean = data1.mean()["promotion_last_5years"]
 work_accident_mean = data1.mean()["Work_accident"]
 
 
+merge01 = pd.merge(satisfaction_mean, average_monthly_hour_mean,
+                   how="inner", on="dept")
+
+merge02 = pd.merge(number_project_mean, last_evaluation_mean,
+                   how="inner", on="dept")
+
+merge03 = pd.merge(merge01, merge02, how='inner', on="dept")
+
+merge04 = pd.merge(time_spend_company_mean,
+                   promotion_last_5years_mean, how="inner", on="dept")
+
+merge05 = pd.merge(work_accident_mean, merge04, how="inner", on="dept")
+
+
+
 
 
 
