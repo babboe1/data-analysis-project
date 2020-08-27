@@ -40,6 +40,9 @@ New_data = pd.merge(merge3, merge5, how="inner", on="dept")
 
 print(New_data)
 
+New_data.to_csv(r"C:\Users\admin\Desktop\project\analysis.ex_employees.csv")
+
+
 
 
 
