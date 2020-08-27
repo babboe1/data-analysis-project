@@ -83,6 +83,7 @@ New_Data1 = pd.merge(merge03, merge05, how="inner", on="dept")
 
 print(New_Data1)
 
+New_Data1.to_csv(r"C:\Users\admin\Desktop\project\analysis.existing_emp.csv")
 
 
 
