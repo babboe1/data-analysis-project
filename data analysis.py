@@ -50,6 +50,22 @@ existing_emp = pd.read_excel(
     sheet_name="Existing employees")
 
 
+data1 = existing_emp.groupby("dept")
+satisfaction_mean = data1.mean()["satisfaction_level"]
+
+average_monthly_hour_mean = data1.mean()["average_montly_hours"]
+
+number_project_mean = data1.mean()["number_project"]
+
+time_spend_company_mean = data1.mean()["time_spend_company"]
+
+last_evaluation_mean = data1.mean()["last_evaluation"]
+
+promotion_last_5years_mean = data1.mean()["promotion_last_5years"]
+
+work_accident_mean = data1.mean()["Work_accident"]
+
+
 
 
 
