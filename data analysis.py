@@ -1,6 +1,7 @@
 import numpy as np
 import pandas as pd
 
+#data analysis for ex employees
 
 ex_employees = pd.read_excel(
     r"Hash-Analytic-Python-Analytics-Problem-case-study-1.xlsx",
@@ -41,6 +42,13 @@ New_data = pd.merge(merge3, merge5, how="inner", on="dept")
 print(New_data)
 
 New_data.to_csv(r"C:\Users\admin\Desktop\project\analysis.ex_employees.csv")
+
+#EXISTING EMPLOYEES  DATA ANALYSIS
+
+existing_emp = pd.read_excel(
+    r"Hash-Analytic-Python-Analytics-Problem-case-study-1.xlsx",
+    sheet_name="Existing employees")
+
 
 
 
