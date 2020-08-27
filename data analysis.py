@@ -79,6 +79,8 @@ merge04 = pd.merge(time_spend_company_mean,
 
 merge05 = pd.merge(work_accident_mean, merge04, how="inner", on="dept")
 
+New_Data1 = pd.merge(merge03, merge05, how="inner", on="dept")
+
 
 
 
