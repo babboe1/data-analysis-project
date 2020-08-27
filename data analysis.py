@@ -2,35 +2,12 @@ import numpy as np
 import pandas as pd
 
 
-emp_who_left = pd.read_excel(
-    r"Hash-Analytic-Python-Analytics-Problem-case-study-1.xlsx", sheet_name="Employees who have left")
-# print(emp_who_left)
+ex_employees = pd.read_excel(
+    r"Hash-Analytic-Python-Analytics-Problem-case-study-1.xlsx",
+    sheet_name="Employees who have left")
 
-a = emp_who_left.groupby("dept")
-a_mean = a.mean()["satisfaction_level"]
-# print(a_mean)
-
-b = emp_who_left.groupby("dept")
-b_mean = b.mean()["average_montly_hours"]
-
-
-c = pd.merge(a_mean, b_mean, how="inner", on="dept")
-
-
-d = emp_who_left.groupby("dept")
-d_mean = d.mean()["number_project"]
-
-e = emp_who_left.groupby("dept")
-e_mean = e.mean()["last_evaluation"]
-
-
-f = pd.merge(c, d_mean, how="inner", on="dept")
-g = pd.merge(e_mean, f, how='inner', on="dept")
-
-
-i = emp_who_left.groupby("dept")
-i_mean = i.mean()["time_spend_company"]
-
+data = ex_employees.groupby("dept")
+satisfaction_mean = data.mean()["satisfaction_level"]
 
 
 
