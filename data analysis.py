@@ -61,7 +61,7 @@ time_spend_company_mean = data1.mean()["time_spend_company"]
 
 last_evaluation_mean = data1.mean()["last_evaluation"]
 
-promotion_last_5years_mean = data1.mean()["promotion_last_5years"]
+promotion_last_5years_mean = data1.mean()["promotion_lyears"]
 
 work_accident_mean = data1.mean()["Work_accident"]
 
